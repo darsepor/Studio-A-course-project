@@ -1,0 +1,4 @@
+[debug] [strategy-test] Classpath dependencies List()
+[debug] [strategy-test] Dependencies from configurations List(strategy)
+[debug] Bloop wrote the configuration of project 'strategy-test' to 'C:\Users\darij\Desktop\emptyfolder\strategy\.bloop\strategy-test.json'
+[success] Generated .bloop\strategy-test.json
