@@ -6,3 +6,42 @@ SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or 
 SLF4J: Ignoring binding found at [jar:file:/C:/Users/darij/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
 2023.03.17 13:32:13 INFO  time: initialize in 0.72s
+2023.03.17 13:32:15 WARN  Build server is not auto-connectable.
+2023.03.17 13:32:15 WARN  no build target for: C:\Users\darij\Desktop\emptyfolder\strategy\build.sbt
+2023.03.17 13:32:18 INFO  no build target found for C:\Users\darij\Desktop\emptyfolder\strategy\build.sbt. Using presentation compiler with project's scala-library version: 3.2.2
+2023.03.17 13:32:20 INFO  time: code lens generation in 5.09s
+2023.03.17 13:33:53 WARN  no build target for: C:\Users\darij\Desktop\emptyfolder\strategy\build.sbt
+2023.03.17 13:33:56 INFO  running 'C:\Users\darij\.jabba\jdk\adopt@1.11.0-11\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\darij\AppData\Local\Temp\metals11572282043467858934\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2023.03.17 13:33:59 INFO  [info] welcome to sbt 1.8.2 (AdoptOpenJDK Java 11.0.11)
+2023.03.17 13:34:02 INFO  [info] loading settings for project strategy-build-build from metals.sbt ...
+2023.03.17 13:34:03 INFO  [info] loading project definition from C:\Users\darij\Desktop\emptyfolder\strategy\project\project
+2023.03.17 13:34:06 INFO  [info] loading settings for project strategy-build from metals.sbt ...
+2023.03.17 13:34:06 INFO  [info] loading project definition from C:\Users\darij\Desktop\emptyfolder\strategy\project
+2023.03.17 13:34:10 INFO  [success] Generated .bloop\strategy-build.json
+2023.03.17 13:34:10 INFO  [success] Total time: 3 s, completed 17 Mar 2023, 13.34.10
+2023.03.17 13:34:12 INFO  [info] loading settings for project strategy from build.sbt ...
+2023.03.17 13:34:12 INFO  [info] set current project to hello-world (in build file:/C:/Users/darij/Desktop/emptyfolder/strategy/)
+2023.03.17 13:34:12 INFO  [success] Generated .bloop\strategy-test.json
+2023.03.17 13:34:12 INFO  [success] Generated .bloop\strategy.json
+2023.03.17 13:34:12 INFO  [success] Total time: 0 s, completed 17 Mar 2023, 13.34.12
+2023.03.17 13:34:13 INFO  time: ran 'sbt bloopInstall' in 16s
+2023.03.17 13:34:13 INFO  Attempting to connect to the build server...
+2023.03.17 13:34:13 INFO  Bloop uses C:\Users\darij\.jabba\jdk\adopt@1.11.0-11 defined at C:\Users\darij\.bloop\bloop.json
+2023.03.17 13:34:13 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\darij\Desktop\emptyfolder\strategy\.metals\bsp.trace.json or C:\Users\darij\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.03.17 13:34:14 INFO  Attempting to connect to the build server...
+2023.03.17 13:34:14 INFO  Bloop uses C:\Users\darij\.jabba\jdk\adopt@1.11.0-11 defined at C:\Users\darij\.bloop\bloop.json
+2023.03.17 13:34:14 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\darij\Desktop\emptyfolder\strategy\project\.metals\bsp.trace.json or C:\Users\darij\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.03.17 13:34:14 INFO  time: Connected to build server in 1.71s
+2023.03.17 13:34:14 INFO  Connected to Build server: Bloop v1.5.6
+2023.03.17 13:34:14 INFO  time: Imported build in 0.12s
+2023.03.17 13:34:21 INFO  time: indexed workspace in 6.03s
+2023.03.17 13:34:27 INFO  time: code lens generation in 6.54s
+2023.03.17 13:34:27 INFO  time: code lens generation in 3.92s
+2023.03.17 13:35:58 INFO  compiling strategy (1 scala source)
+2023.03.17 13:36:12 INFO  time: compiled strategy in 14s
+Mar 17, 2023 1:42:58 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.03.17 14:09:33 INFO  compiling strategy (1 scala source)
+2023.03.17 14:09:35 INFO  time: compiled strategy in 1.31s
+Mar 17, 2023 2:14:33 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
