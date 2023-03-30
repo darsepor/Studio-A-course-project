@@ -1,9 +1,20 @@
 package base
 
-class Player(var name:String){
+abstract class Player(){
     var currency = 100
+    def advance_turn():Unit
 }
 
-class Human(name:String) extends Player(name)
+case class Human(name:String) extends Player(){
+    def advance_turn():Unit = {
 
-class AI(name:String) extends Player(name)
+    }
+}
+
+case class AI(name:String) extends Player(){
+     def advance_turn():Unit = {
+        
+     }
+
+
+}
