@@ -16,7 +16,23 @@
         ],
         "classpath": [
             "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.8\\scala-library-2.13.8.jar",
-            "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-parser-combinators_2.13\\2.1.1\\scala-parser-combinators_2.13-2.1.1.jar"
+            "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-parser-combinators_2.13\\2.1.1\\scala-parser-combinators_2.13-2.1.1.jar",
+            "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalafx\\scalafx_3\\19.0.0-R30\\scalafx_3-19.0.0-R30.jar",
+            "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala3-library_3\\3.0.2\\scala3-library_3-3.0.2.jar",
+            "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-base\\19\\javafx-base-19.jar",
+            "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-controls\\19\\javafx-controls-19.jar",
+            "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-fxml\\19\\javafx-fxml-19.jar",
+            "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-graphics\\19\\javafx-graphics-19.jar",
+            "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-media\\19\\javafx-media-19.jar",
+            "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-swing\\19\\javafx-swing-19.jar",
+            "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-web\\19\\javafx-web-19.jar",
+            "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-base\\19\\javafx-base-19-win.jar",
+            "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-controls\\19\\javafx-controls-19-win.jar",
+            "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-fxml\\19\\javafx-fxml-19-win.jar",
+            "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-graphics\\19\\javafx-graphics-19-win.jar",
+            "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-media\\19\\javafx-media-19-win.jar",
+            "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-swing\\19\\javafx-swing-19-win.jar",
+            "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-web\\19\\javafx-web-19-win.jar"
         ],
         "out": "C:\\Users\\darij\\Desktop\\emptyfolder\\strategy\\.bloop\\strategy",
         "classesDir": "C:\\Users\\darij\\Desktop\\emptyfolder\\strategy\\.bloop\\strategy\\scala-2.13\\classes",
@@ -146,6 +162,159 @@
                             "name": "scala-parser-combinators_2.13",
                             "classifier": "sources",
                             "path": "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-parser-combinators_2.13\\2.1.1\\scala-parser-combinators_2.13-2.1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalafx",
+                    "name": "scalafx_3",
+                    "version": "19.0.0-R30",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalafx_3",
+                            "path": "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalafx\\scalafx_3\\19.0.0-R30\\scalafx_3-19.0.0-R30.jar"
+                        },
+                        {
+                            "name": "scalafx_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalafx\\scalafx_3\\19.0.0-R30\\scalafx_3-19.0.0-R30-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala3-library_3",
+                    "version": "3.0.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala3-library_3",
+                            "path": "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala3-library_3\\3.0.2\\scala3-library_3-3.0.2.jar"
+                        },
+                        {
+                            "name": "scala3-library_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala3-library_3\\3.0.2\\scala3-library_3-3.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.openjfx",
+                    "name": "javafx-base",
+                    "version": "19",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "javafx-base",
+                            "path": "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-base\\19\\javafx-base-19.jar"
+                        },
+                        {
+                            "name": "javafx-base",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-base\\19\\javafx-base-19-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.openjfx",
+                    "name": "javafx-controls",
+                    "version": "19",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "javafx-controls",
+                            "path": "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-controls\\19\\javafx-controls-19.jar"
+                        },
+                        {
+                            "name": "javafx-controls",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-controls\\19\\javafx-controls-19-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.openjfx",
+                    "name": "javafx-fxml",
+                    "version": "19",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "javafx-fxml",
+                            "path": "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-fxml\\19\\javafx-fxml-19.jar"
+                        },
+                        {
+                            "name": "javafx-fxml",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-fxml\\19\\javafx-fxml-19-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.openjfx",
+                    "name": "javafx-graphics",
+                    "version": "19",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "javafx-graphics",
+                            "path": "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-graphics\\19\\javafx-graphics-19.jar"
+                        },
+                        {
+                            "name": "javafx-graphics",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-graphics\\19\\javafx-graphics-19-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.openjfx",
+                    "name": "javafx-media",
+                    "version": "19",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "javafx-media",
+                            "path": "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-media\\19\\javafx-media-19.jar"
+                        },
+                        {
+                            "name": "javafx-media",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-media\\19\\javafx-media-19-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.openjfx",
+                    "name": "javafx-swing",
+                    "version": "19",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "javafx-swing",
+                            "path": "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-swing\\19\\javafx-swing-19.jar"
+                        },
+                        {
+                            "name": "javafx-swing",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-swing\\19\\javafx-swing-19-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.openjfx",
+                    "name": "javafx-web",
+                    "version": "19",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "javafx-web",
+                            "path": "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-web\\19\\javafx-web-19.jar"
+                        },
+                        {
+                            "name": "javafx-web",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\darij\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-web\\19\\javafx-web-19-sources.jar"
                         }
                     ]
                 },

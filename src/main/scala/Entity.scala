@@ -1,27 +1,27 @@
 package base
 
-class Entity(val name:String, var owner:Player, var location:Hex){
-    
+class Entity(val name:String, val owner:Player/*, location:Hex*/){
+    //var where = location
 }
 
 
-class City (name:String, owner:Player, location:Hex)
-extends Entity(name, owner, location){
+case class City (override val name:String, override val owner:Player)
+extends Entity(name, owner){
     var hitpoints = 100
     def produceUnit = ???
 
 }
 
-class Soldier (name:String, owner:Player, location:Hex)
-extends Entity(name, owner, location){
+case class Soldier (override val name:String, override val owner:Player)
+extends Entity(name, owner){
     var hitpoints = 25
     def buildFort = ???
     def attack = ???
 
 }
 
-class BattleShip (name:String, owner:Player, location:Hex)
-extends Entity(name, owner, location){
+case class BattleShip (override val name:String, override val owner:Player)
+extends Entity(name, owner){
     var hitpoints = 15
     def rangedAttack = ???
 
