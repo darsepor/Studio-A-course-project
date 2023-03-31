@@ -1,3 +1,13 @@
 17/03/2023
 off to a late start, setting up the repository and
 some template classes for the game logic
+
+
+31/03/2023
+Attempting to implement some basic GUI via ScalaFX.
+Imported an older version of ScalaFX because I had issues with the newer ones.
+At the moment of writing things are hardly functional.
+I have this resource for hexes: https://www.redblobgames.com/grids/hexagons/implementation.html
+and also some calculations I got from ChatGPT. The latter works better so far but
+it doesn't coincide well with game logic.
+Managed to make a neat map using the resource above
