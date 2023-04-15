@@ -6,18 +6,22 @@ abstract class Hex(inhabitant:Option[Entity], val q:Int, val r:Int, val s:Int){
     assert(r+q+s==0)
 }
 
-case class Water(inhabitant:Option[Entity], override val q:Int, override val r:Int, override val s:Int) extends Hex(inhabitant, r, q, s){
+case class Water(inhabitant:Option[Entity], override val q:Int,
+override val r:Int, override val s:Int) extends Hex(inhabitant, r, q, s){
     
 }
 
-case class Plain(inhabitant:Option[Entity], override val q:Int, override val r:Int, override val s:Int) extends Hex(inhabitant, r, q, s){
+case class Plain(inhabitant:Option[Entity], override val q:Int,
+override val r:Int, override val s:Int) extends Hex(inhabitant, r, q, s){
 
 }
 
-case class Hill(inhabitant:Option[Entity], override val q:Int, override val r:Int, override val s:Int) extends Hex(inhabitant, r, q, s){
+case class Hill(inhabitant:Option[Entity], override val q:Int,
+override val r:Int, override val s:Int) extends Hex(inhabitant, r, q, s){
 }
     
-case class Fort(inhabitant:Option[Entity], override val q:Int, override val r:Int, override val s:Int) extends Hex(inhabitant, r, q, s){
+case class Fort(inhabitant:Option[Entity], override val q:Int,
+override val r:Int, override val s:Int) extends Hex(inhabitant, r, q, s){
 
 }
 

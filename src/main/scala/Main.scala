@@ -4,14 +4,23 @@ import scalafx.Includes._
 import scalafx.application.JFXApp
 import scalafx.application.JFXApp.PrimaryStage
 import scalafx.scene.layout.Pane
-
+import scalafx.scene.control.{ContextMenu, MenuItem}
+import scalafx.scene.text.{Font, FontWeight, Text}
 import scalafx.scene.Scene
 import scalafx.scene.layout.GridPane
 import scalafx.scene.paint.Color
 import scalafx.scene.shape.Polygon
 import scalafx.geometry.Insets
+import scala.collection.immutable.HashMap
+import scalafx.scene.layout.BorderPane
+import scalafx.scene.input.MouseEvent
+import scalafx.scene.input.MouseButton
+import scalafx.stage.Window
+import scalafx.geometry.Pos
+import scalafx.event.ActionEvent
+import scalafx.beans.property.{ObjectProperty, StringProperty}
 object Main extends JFXApp {
-
+val random = scala.util.Random
     
 /*
     val map = new Atlas(Buffer.tabulate(30, 30, 30)((_, _, _) => null))
@@ -46,12 +55,14 @@ object Main extends JFXApp {
     
     
 */
-        
-        val root =  new Pane{
+        //val polygontohex = scala.collection.mutable.HashSet[(Polygon, Hex)]()
+        val themap = new Atlas(new scala.collection.mutable.HashSet[(Polygon, Hex)]())
+        val you =  Human("You")
+        val root =  new BorderPane{
             
         }
-        val size = 15
-        val center = 150
+        val size = 30
+        val center = 500
         
         //val polyhexes = Buffer.tabulate(30, 30, 30)((_, _, _) => null)
         for(q <- -5 to 5){
@@ -59,7 +70,22 @@ object Main extends JFXApp {
             val upper = scala.math.min(5, -q+5)
             for(r <- lower to upper){
                 //for(k <- 0 until 4){
-                    val testsubject = new Water(None, q, r, -q-r)
+                    val water =  Water(None, q, r, -q-r)
+                    val plain =  Plain(None, q, r, -q-r)
+                    val hill =  Hill(None, q, r, -q-r)
+
+                    val determine = random.nextInt(3)
+                    var testsubject:Hex = null
+                    if(determine==0){
+                        testsubject = water
+                    }
+                    else if (determine ==1){
+                        testsubject = hill
+                    }
+                    else{
+                        testsubject = plain
+                    }
+                    
                     val g = LayoutOrient.tuplecoords(testsubject)
                     val xcoord = size*g._1+center //width*(i + j/2.0)
                     val ycoord = size*g._2+center//heighth*(j*0.75+k*1.5)
@@ -88,30 +114,75 @@ object Main extends JFXApp {
                     polyhex.translateX = xcoord
                     polyhex.translateY = ycoord
                     //polyhex.fill = Color.White
-                    if(q==0&& r==0){
-                     //   polyhex.fill = Color.Black
-                    }
-                    else{
-                        polyhex.fill = Color.White
-                    }
+                    
                     polyhex.stroke = Color.Black
-                    
+                    testsubject match {
+                        case Hill(inhabitant, q, r, s) => polyhex.fill_=(Color.Gray)
+                        case Water(inhabitant, q, r, s) => polyhex.fill_=(Color.LightCyan)
+                        case Plain(inhabitant, q, r, s) => polyhex.fill_=(Color.LightGreen)
+                    }
                     root.children += polyhex
-                    
+                    themap.landscape.addOne((polyhex, testsubject))
+                    polyhex.onMouseClicked = (event: MouseEvent) => {
+                        if (event.button == MouseButton.Secondary) { 
+    
+                        getamenu(event.screenX, event.screenY)
+                        }
+                    //themap.landscape.add(testsubject)
+
+                    }
                 //}
             }
         }
-        val col = 30
-        val row = 30
+        def getamenu(x: Double, y: Double) = {
+            val menu = new ContextMenu {
+                
+                val menuitem1 = new MenuItem("Action1")
+                val menuitem2 = new MenuItem("Action13")
+                
+                menuitem1.onAction = action1
+                menuitem2.onAction = action13
+                
+                items.addAll(menuitem1, menuitem2)
+            }
+            
+            menu.show(root, x, y)
+        }
+        def action1(event: ActionEvent): Unit = {
+            you.currency=0
+            //textProperty.set(s"Gold: ${you.currency}")
+            refreshwealth()
+        }
+        def action13(event: ActionEvent): Unit = {
+            you.currency=69
+            //textProperty.set(s"Gold: ${you.currency}")
+            refreshwealth()
+        }
+        def refreshwealth():Unit = {
+            textProperty.set(s"Gold: ${you.currency}")
+        }
+        /* a test if neighbours works for(i <- themap.neighbours(Water(None, 0, 0, 0))){
+            polygontohex.find(a => a._2==i).get._1.fill_=(Color.Yellow)
+        }*/
+        //val col = 30
+        //val row = 30
         val scene = new Scene(root)
         stage = new JFXApp.PrimaryStage{
             scene = Main.scene
-            width = 500
-            height = 500
+            width = 1000
+            height = 1000
             /*width = row*width + width/2
             height = row * heighth + heighth/4 **/
         }
+    
+        
 
+        val textProperty = StringProperty(s"Gold: ${you.currency}")
+        val text = new Text()
+        text.font = Font.font("Arial", FontWeight.Bold, 18)
+        text.fill = Color.Black
+        text.textProperty().bind(textProperty)
+        root.top_=(text)
     
-    
+        
 }
