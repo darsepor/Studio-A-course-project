@@ -19,6 +19,7 @@ import scalafx.stage.Window
 import scalafx.geometry.Pos
 import scalafx.event.ActionEvent
 import scalafx.beans.property.{ObjectProperty, StringProperty}
+import scalafx.scene.shape.Circle
 object Main extends JFXApp {
 val random = scala.util.Random
     
@@ -101,7 +102,7 @@ val random = scala.util.Random
                     width/2, heighth,
                     0, heighth*3/4,
                     0, heighth/4,*/
-                    offsets.map(a => (a._2+center, a._2+center))
+                    //offsets.map(a => (a._1+1000, a._2))
                     val polyhex:Polygon =   Polygon(
                         offsets(0)._1, offsets(0)._2,
                         offsets(1)._1, offsets(1)._2,
@@ -123,10 +124,11 @@ val random = scala.util.Random
                     }
                     root.children += polyhex
                     themap.landscape.addOne((polyhex, testsubject))
+
                     polyhex.onMouseClicked = (event: MouseEvent) => {
                         if (event.button == MouseButton.Secondary) { 
     
-                        getamenu(event.screenX, event.screenY)
+                        getamenu(event.screenX, event.screenY, polyhex)
                         }
                     //themap.landscape.add(testsubject)
 
@@ -134,23 +136,31 @@ val random = scala.util.Random
                 //}
             }
         }
-        def getamenu(x: Double, y: Double) = {
+        def getamenu(x: Double, y: Double, polyhex:Polygon) = {
+            def buildcitywrapper(event: ActionEvent): Unit = {
+                buildcityhuman(themap.landscape.find(a => a._1==polyhex).get._2, polyhex, "cmon")
+            }
             val menu = new ContextMenu {
                 
                 val menuitem1 = new MenuItem("Action1")
                 val menuitem2 = new MenuItem("Action13")
+                val newcity = new MenuItem("New city")
                 
                 menuitem1.onAction = action1
                 menuitem2.onAction = action13
+                newcity.onAction = buildcitywrapper
                 
-                items.addAll(menuitem1, menuitem2)
+                items.addAll(menuitem1, menuitem2, newcity)
             }
             
             menu.show(root, x, y)
+            
         }
+
         def action1(event: ActionEvent): Unit = {
             you.currency=0
             //textProperty.set(s"Gold: ${you.currency}")
+            
             refreshwealth()
         }
         def action13(event: ActionEvent): Unit = {
@@ -183,6 +193,20 @@ val random = scala.util.Random
         text.fill = Color.Black
         text.textProperty().bind(textProperty)
         root.top_=(text)
-    
+        
+        def buildcityhuman(logichex:Hex, polyhex:Polygon, cityname:String) = {
+            
+            
+            val circle = new Circle {
+                centerX = polyhex.translateX.toDouble
+                centerY = polyhex.translateY.toDouble
+                radius = 10
+                fill = Color.White 
+                stroke = Color.Black 
+            }
+            root.children += circle
+            val city = City(cityname, you, circle)
+            logichex.unit = Option(city)
+        }
         
 }

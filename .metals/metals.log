@@ -3485,3 +3485,321 @@ INFO: compiler crashed due to an error in the Scala compiler, retrying with new 
 2023.04.14 22:58:38 INFO  time: compiled strategy in 0.67s
 2023.04.14 22:58:38 INFO  compiling strategy (1 scala source)
 2023.04.14 22:58:39 INFO  time: compiled strategy in 1.08s
+2023.04.15 12:10:38 INFO  Started: Metals version 0.11.11 in workspace 'C:\Users\darij\Desktop\emptyfolder\strategy' for client Visual Studio Code 1.77.3.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/C:/Users/darij/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.04.15 12:10:43 INFO  time: initialize in 4.9s
+2023.04.15 12:10:45 INFO  Attempting to connect to the build server...
+2023.04.15 12:10:45 INFO  Bloop uses C:\Users\darij\.jabba\jdk\adopt@1.11.0-11 defined at C:\Users\darij\.bloop\bloop.json
+2023.04.15 12:10:45 INFO  skipping build import with status 'Installed'
+2023.04.15 12:10:54 INFO  no build target found for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Atlas.scala. Using presentation compiler with project's scala-library version: 3.2.2
+2023.04.15 12:10:57 INFO  time: code lens generation in 10s
+2023.04.15 12:11:00 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\darij\Desktop\emptyfolder\strategy\.metals\bsp.trace.json or C:\Users\darij\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.04.15 12:11:00 INFO  Attempting to connect to the build server...
+2023.04.15 12:11:00 INFO  Bloop uses C:\Users\darij\.jabba\jdk\adopt@1.11.0-11 defined at C:\Users\darij\.bloop\bloop.json
+2023.04.15 12:11:00 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\darij\Desktop\emptyfolder\strategy\project\.metals\bsp.trace.json or C:\Users\darij\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.04.15 12:11:00 INFO  time: Connected to build server in 15s
+2023.04.15 12:11:00 INFO  Connected to Build server: Bloop v1.5.6
+2023.04.15 12:11:01 INFO  time: Imported build in 0.27s
+2023.04.15 12:11:11 INFO  time: indexed workspace in 10s
+2023.04.15 12:25:39 INFO  compiling strategy (1 scala source)
+2023.04.15 12:25:43 INFO  time: compiled strategy in 4.41s
+2023.04.15 12:38:41 INFO  compiling strategy (1 scala source)
+2023.04.15 12:38:41 INFO  time: compiled strategy in 0.19s
+2023.04.15 12:39:24 INFO  compiling strategy (1 scala source)
+2023.04.15 12:39:24 INFO  time: compiled strategy in 0.33s
+2023.04.15 12:39:51 INFO  compiling strategy (1 scala source)
+2023.04.15 12:39:51 INFO  time: compiled strategy in 0.16s
+2023.04.15 12:40:07 INFO  compiling strategy (1 scala source)
+2023.04.15 12:40:07 INFO  time: compiled strategy in 86ms
+2023.04.15 12:40:11 INFO  file:///C:/Users/darij/Desktop/emptyfolder/strategy/src/main/scala/Atlas.scala:4:40: stale bloop error: ';' expected but '[' found.
+import scala.collection.mutable.HashSet[Hex]
+                                       ^
+2023.04.15 12:40:11 INFO  file:///C:/Users/darij/Desktop/emptyfolder/strategy/src/main/scala/Atlas.scala:4:40: stale bloop error: ';' expected but '[' found.
+import scala.collection.mutable.HashSet[Hex]
+                                       ^
+2023.04.15 12:44:47 INFO  compiling strategy (1 scala source)
+2023.04.15 12:44:47 INFO  time: compiled strategy in 80ms
+2023.04.15 12:45:05 INFO  compiling strategy (1 scala source)
+2023.04.15 12:45:05 INFO  time: compiled strategy in 89ms
+2023.04.15 12:45:18 INFO  compiling strategy (1 scala source)
+2023.04.15 12:45:19 INFO  time: compiled strategy in 1.14s
+Apr 15, 2023 12:47:41 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: offset 4692, count -1, length 5034
+2023.04.15 12:48:05 INFO  compiling strategy (1 scala source)
+2023.04.15 12:48:05 INFO  time: compiled strategy in 0.17s
+2023.04.15 12:48:08 INFO  compiling strategy (1 scala source)
+2023.04.15 12:48:08 INFO  time: compiled strategy in 98ms
+2023.04.15 12:48:25 INFO  compiling strategy (1 scala source)
+2023.04.15 12:48:28 INFO  time: compiled strategy in 2.59s
+2023.04.15 12:50:32 INFO  compiling strategy (1 scala source)
+2023.04.15 12:50:35 INFO  time: compiled strategy in 2.11s
+2023.04.15 12:51:01 INFO  compiling strategy (1 scala source)
+2023.04.15 12:51:03 INFO  time: compiled strategy in 1.92s
+2023.04.15 12:51:10 INFO  compiling strategy (1 scala source)
+2023.04.15 12:51:12 INFO  time: compiled strategy in 1.57s
+Apr 15, 2023 12:51:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1926
+2023.04.15 12:51:39 INFO  compiling strategy (1 scala source)
+2023.04.15 12:51:40 INFO  time: compiled strategy in 1.39s
+2023.04.15 12:52:27 INFO  compiling strategy (1 scala source)
+2023.04.15 12:52:29 INFO  time: compiled strategy in 1.54s
+something's wrong: no file:///C:/Users/darij/Desktop/emptyfolder/strategy/src/main/scala/Atlas.scala in scala.collection.mutable.HashSet[base.Hex]RangePosition(file:///C:/Users/darij/Desktop/emptyfolder/strategy/src/main/scala/Atlas.scala, 144, 169, 182)
+something's wrong: no file:///C:/Users/darij/Desktop/emptyfolder/strategy/src/main/scala/Atlas.scala in (base.Hex, <error>)RangePosition(file:///C:/Users/darij/Desktop/emptyfolder/strategy/src/main/scala/Atlas.scala, 177, 177, 190)
+something's wrong: no file:///C:/Users/darij/Desktop/emptyfolder/strategy/src/main/scala/Atlas.scala in (scalafx.scene.shape.Polygon, <error>)RangePosition(file:///C:/Users/darij/Desktop/emptyfolder/strategy/src/main/scala/Atlas.scala, 213, 213, 230)
+2023.04.15 12:53:48 INFO  compiling strategy (1 scala source)
+2023.04.15 12:53:48 INFO  time: compiled strategy in 0.16s
+2023.04.15 12:54:18 INFO  compiling strategy (1 scala source)
+2023.04.15 12:54:18 INFO  time: compiled strategy in 0.85s
+2023.04.15 12:54:18 INFO  compiling strategy (1 scala source)
+2023.04.15 12:54:20 INFO  time: compiled strategy in 0.33s
+2023.04.15 12:54:22 INFO  compiling strategy (1 scala source)
+2023.04.15 12:54:22 INFO  time: compiled strategy in 0.85s
+2023.04.15 12:54:22 INFO  compiling strategy (1 scala source)
+2023.04.15 12:54:23 INFO  time: compiled strategy in 0.32s
+2023.04.15 12:54:34 INFO  compiling strategy (1 scala source)
+2023.04.15 12:54:34 INFO  time: compiled strategy in 0.76s
+2023.04.15 12:54:34 INFO  compiling strategy (1 scala source)
+2023.04.15 12:54:35 INFO  time: compiled strategy in 0.35s
+2023.04.15 12:54:37 INFO  compiling strategy (2 scala sources)
+2023.04.15 12:54:37 INFO  time: compiled strategy in 0.41s
+2023.04.15 12:54:58 INFO  compiling strategy (2 scala sources)
+2023.04.15 12:54:58 INFO  time: compiled strategy in 0.27s
+2023.04.15 12:55:01 INFO  compiling strategy (2 scala sources)
+2023.04.15 12:55:02 INFO  time: compiled strategy in 1.47s
+2023.04.15 13:22:15 INFO  compiling strategy (1 scala source)
+2023.04.15 13:22:17 INFO  time: compiled strategy in 1.29s
+2023.04.15 13:28:44 INFO  compiling strategy (1 scala source)
+2023.04.15 13:28:46 INFO  time: compiled strategy in 1.33s
+2023.04.15 13:33:57 INFO  compiling strategy (1 scala source)
+2023.04.15 13:33:57 INFO  time: compiled strategy in 0.26s
+2023.04.15 13:34:04 INFO  compiling strategy (1 scala source)
+2023.04.15 13:34:06 INFO  time: compiled strategy in 1.86s
+Apr 15, 2023 1:38:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2714
+2023.04.15 13:39:00 INFO  compiling strategy (1 scala source)
+2023.04.15 13:39:00 INFO  time: compiled strategy in 0.28s
+2023.04.15 13:39:05 INFO  compiling strategy (1 scala source)
+2023.04.15 13:39:05 INFO  time: compiled strategy in 0.27s
+2023.04.15 13:39:19 INFO  compiling strategy (1 scala source)
+2023.04.15 13:39:19 INFO  time: compiled strategy in 0.29s
+Apr 15, 2023 1:39:21 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2023.04.15 13:39:30 INFO  compiling strategy (1 scala source)
+2023.04.15 13:39:30 INFO  time: compiled strategy in 0.28s
+2023.04.15 13:44:44 INFO  compiling strategy (1 scala source)
+2023.04.15 13:44:44 INFO  time: compiled strategy in 0.27s
+2023.04.15 13:45:03 INFO  compiling strategy (1 scala source)
+2023.04.15 13:45:03 INFO  time: compiled strategy in 0.28s
+Exception in thread "pool-5-thread-1" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Apr 15, 2023 1:45:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3003
+Exception in thread "pool-5-thread-2" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2023.04.15 13:45:16 INFO  compiling strategy (1 scala source)
+2023.04.15 13:45:16 INFO  time: compiled strategy in 0.28s
+2023.04.15 13:45:18 INFO  compiling strategy (1 scala source)
+2023.04.15 13:45:19 INFO  time: compiled strategy in 1.26s
+2023.04.15 13:48:25 INFO  compiling strategy (1 scala source)
+2023.04.15 13:48:25 INFO  time: compiled strategy in 0.33s
+2023.04.15 13:48:27 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:48:56 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:07 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:09 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:09 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:09 INFO  compiling strategy (1 scala source)
+2023.04.15 13:49:09 INFO  time: compiled strategy in 0.32s
+2023.04.15 13:49:12 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:13 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:13 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:13 WARN  Using indexes to guess the definition of ContextMenu
+2023.04.15 13:49:16 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:16 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:16 WARN  Using indexes to guess the definition of ContextMenu
+2023.04.15 13:49:16 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:16 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:16 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:16 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:16 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:16 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:16 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:20 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:20 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:20 WARN  Using indexes to guess the definition of MenuItem
+2023.04.15 13:49:20 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:20 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:21 WARN  Using indexes to guess the definition of MenuItem
+2023.04.15 13:49:21 INFO  compiling strategy (1 scala source)
+2023.04.15 13:49:21 INFO  time: compiled strategy in 0.42s
+2023.04.15 13:49:24 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:28 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:31 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:31 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:31 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:31 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:31 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:32 INFO  compiling strategy (1 scala source)
+2023.04.15 13:49:32 INFO  time: compiled strategy in 0.3s
+2023.04.15 13:49:34 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:39 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:40 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:40 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:42 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:44 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:49:51 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+Apr 15, 2023 1:50:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3425
+2023.04.15 13:50:33 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:50:34 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:50:34 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:50:34 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:50:34 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:50:34 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:50:34 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:50:34 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:50:35 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:50:34 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:50:34 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:50:38 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:50:38 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:50:38 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:50:39 INFO  compiling strategy (1 scala source)
+2023.04.15 13:50:39 INFO  time: compiled strategy in 0.3s
+2023.04.15 13:50:42 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:51:00 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:51:13 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:51:19 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:51:23 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:51:30 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:51:30 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:51:33 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:51:34 INFO  compiling strategy (1 scala source)
+2023.04.15 13:51:34 INFO  time: compiled strategy in 0.27s
+2023.04.15 13:51:37 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:51:51 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:51:53 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:51:57 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:51:57 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:52:16 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:52:17 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:52:17 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:52:22 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:52:24 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:52:25 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:52:29 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:52:30 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:52:34 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 13:52:35 INFO  compiling strategy (1 scala source)
+2023.04.15 13:52:37 INFO  time: compiled strategy in 1.69s
+Apr 15, 2023 1:54:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3732
+2023.04.15 13:55:08 INFO  compiling strategy (1 scala source)
+2023.04.15 13:55:08 INFO  time: compiled strategy in 0.26s
+2023.04.15 13:55:31 INFO  compiling strategy (1 scala source)
+2023.04.15 13:55:31 INFO  time: compiled strategy in 0.28s
+2023.04.15 13:55:38 INFO  compiling strategy (1 scala source)
+2023.04.15 13:55:40 INFO  time: compiled strategy in 1.47s
+2023.04.15 13:56:22 INFO  compiling strategy (1 scala source)
+2023.04.15 13:56:24 INFO  time: compiled strategy in 1.52s
+2023.04.15 13:56:26 INFO  compiling strategy (1 scala source)
+2023.04.15 13:56:28 INFO  time: compiled strategy in 1.29s
+2023.04.15 13:58:39 INFO  compiling strategy (1 scala source)
+2023.04.15 13:58:40 INFO  time: compiled strategy in 1.67s
+2023.04.15 13:59:16 INFO  compiling strategy (1 scala source)
+2023.04.15 13:59:18 INFO  time: compiled strategy in 1.36s
+2023.04.15 14:04:45 INFO  compiling strategy (1 scala source)
+2023.04.15 14:04:47 INFO  time: compiled strategy in 1.44s
+2023.04.15 14:08:18 INFO  compiling strategy (1 scala source)
+2023.04.15 14:08:18 INFO  time: compiled strategy in 0.36s
+Apr 15, 2023 2:08:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4368
+2023.04.15 14:09:09 INFO  compiling strategy (1 scala source)
+2023.04.15 14:09:09 INFO  time: compiled strategy in 0.36s
+2023.04.15 14:09:17 INFO  compiling strategy (1 scala source)
+2023.04.15 14:09:18 INFO  time: compiled strategy in 1.74s
+2023.04.15 14:09:57 INFO  compiling strategy (1 scala source)
+Apr 15, 2023 2:09:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4497
+2023.04.15 14:09:59 INFO  time: compiled strategy in 1.61s
+2023.04.15 14:10:31 INFO  compiling strategy (1 scala source)
+2023.04.15 14:10:32 INFO  time: compiled strategy in 1.35s
+2023.04.15 14:10:56 INFO  compiling strategy (1 scala source)
+2023.04.15 14:10:58 INFO  time: compiled strategy in 1.61s
+2023.04.15 14:11:47 INFO  compiling strategy (1 scala source)
+2023.04.15 14:11:49 INFO  time: compiled strategy in 1.33s
+2023.04.15 14:12:40 INFO  compiling strategy (1 scala source)
+2023.04.15 14:12:40 INFO  time: compiled strategy in 0.28s
+2023.04.15 14:14:16 INFO  compiling strategy (1 scala source)
+2023.04.15 14:14:16 INFO  time: compiled strategy in 0.28s
+Apr 15, 2023 2:14:23 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Apr 15, 2023 2:14:23 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:420)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:140)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:974)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:822)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:23)
+
+2023.04.15 14:14:35 WARN  Using indexes to guess the definition of action1
+Exception in thread "pool-5-thread-3" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:195)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2023.04.15 14:14:40 INFO  compiling strategy (1 scala source)
+2023.04.15 14:14:40 INFO  time: compiled strategy in 0.27s
+2023.04.15 14:14:48 INFO  compiling strategy (1 scala source)
+2023.04.15 14:14:48 INFO  time: compiled strategy in 0.27s
+2023.04.15 14:15:06 INFO  compiling strategy (1 scala source)
+2023.04.15 14:15:08 INFO  time: compiled strategy in 1.43s
+2023.04.15 14:15:10 INFO  compiling strategy (1 scala source)
+2023.04.15 14:15:11 INFO  time: compiled strategy in 1.36s
+2023.04.15 14:18:34 WARN  Could not load snapshot text for C:\Users\darij\Desktop\emptyfolder\strategy\src\main\scala\Main.scala
+2023.04.15 14:18:34 INFO  compiling strategy (1 scala source)
+2023.04.15 14:18:36 INFO  time: compiled strategy in 1.39s
+2023.04.15 14:20:01 INFO  compiling strategy (1 scala source)
+2023.04.15 14:20:03 INFO  time: compiled strategy in 1.61s
+2023.04.15 14:20:46 INFO  compiling strategy (1 scala source)
+2023.04.15 14:20:47 INFO  time: compiled strategy in 1.48s
+Apr 15, 2023 2:21:31 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Apr 15, 2023 2:21:31 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:420)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:140)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:974)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:822)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:23)
+
+2023.04.15 14:21:44 INFO  compiling strategy (1 scala source)
+2023.04.15 14:21:46 INFO  time: compiled strategy in 1.58s
+2023.04.15 14:21:54 INFO  compiling strategy (1 scala source)
+2023.04.15 14:21:55 INFO  time: compiled strategy in 1.29s
+2023.04.15 14:46:51 INFO  compiling strategy (1 scala source)
+Apr 15, 2023 2:46:52 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.04.15 14:46:53 INFO  time: compiled strategy in 1.63s

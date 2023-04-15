@@ -1,11 +1,13 @@
 package base
 
+import scalafx.scene.shape.Circle
+
 class Entity(val name:String, val owner:Player/*, location:Hex*/){
     //var where = location
 }
 
 
-case class City (override val name:String, override val owner:Player)
+case class City (override val name:String, override val owner:Player, val associatedcircle:Circle)
 extends Entity(name, owner){
     var hitpoints = 100
     def produceUnit = ???
