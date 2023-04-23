@@ -4,11 +4,12 @@ import scala.math.sqrt
 abstract class Hex(inhabitant:Option[Entity], val q:Int, val r:Int, val s:Int){
     var unit = inhabitant
     assert(r+q+s==0)
+    val isWater = false
 }
 
 case class Water(inhabitant:Option[Entity], override val q:Int,
 override val r:Int, override val s:Int) extends Hex(inhabitant, r, q, s){
-    
+    override val isWater: Boolean = true
 }
 
 case class Plain(inhabitant:Option[Entity], override val q:Int,

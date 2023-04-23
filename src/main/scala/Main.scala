@@ -20,9 +20,10 @@ import scalafx.geometry.Pos
 import scalafx.event.ActionEvent
 import scalafx.beans.property.{ObjectProperty, StringProperty}
 import scalafx.scene.shape.Circle
+import scala.util.control.Breaks._
 object Main extends JFXApp {
-val random = scala.util.Random
-    
+    val random = scala.util.Random
+    var turn = 0
 /*
     val map = new Atlas(Buffer.tabulate(30, 30, 30)((_, _, _) => null))
     val random = scala.util.Random
@@ -64,7 +65,7 @@ val random = scala.util.Random
         }
         val size = 30
         val center = 500
-        
+        var aMenuOpen = false
         //val polyhexes = Buffer.tabulate(30, 30, 30)((_, _, _) => null)
         for(q <- -5 to 5){
             val lower = scala.math.max(-5, -q-5)
@@ -126,9 +127,10 @@ val random = scala.util.Random
                     themap.landscape.addOne((polyhex, testsubject))
 
                     polyhex.onMouseClicked = (event: MouseEvent) => {
-                        if (event.button == MouseButton.Secondary) { 
-    
-                        getamenu(event.screenX, event.screenY, polyhex)
+                        if (event.button == MouseButton.Secondary&&(!aMenuOpen)) { 
+                            //aMenuOpen = true
+                            getamenu(event.screenX, event.screenY, polyhex, testsubject)
+                            
                         }
                     //themap.landscape.add(testsubject)
 
@@ -136,21 +138,68 @@ val random = scala.util.Random
                 //}
             }
         }
-        def getamenu(x: Double, y: Double, polyhex:Polygon) = {
+        val inArray = themap.landscape.toArray
+        var test = inArray(random.nextInt(inArray.size))
+        while(test._2.isWater){
+            test = inArray(random.nextInt(inArray.size))
+        }
+        buildcityhuman(test._2, test._1)
+        def doWeHaveYourCityNear(logichex:Hex):Boolean = {
+            themap.neighbours(logichex)
+            .exists(a => a.unit.nonEmpty&&a.unit.get.isCity&&a.unit.get.owner==you)
+        }
+        def gotAnyUnitsNear(logichex:Hex):Boolean = {
+            themap.neighbours(logichex)
+            .exists(a => a.unit.nonEmpty&&a.unit.get.owner==you)
+        }
+
+        def getamenu(x: Double, y: Double, polyhex:Polygon, logichex:Hex) = {
+
             def buildcitywrapper(event: ActionEvent): Unit = {
-                buildcityhuman(themap.landscape.find(a => a._1==polyhex).get._2, polyhex, "cmon")
+                buildcityhuman(logichex, polyhex)
+                //aMenuOpen = false
+
+            }
+            def createbattleshipwrapper(event: ActionEvent): Unit = {
+                placebattleshiphuman(logichex, polyhex)
+                //aMenuOpen = false
+            }
+            def soldierwrapper(event: ActionEvent): Unit = {
+                placesoldierhuman(logichex, polyhex)
+                //aMenuOpen = false
             }
             val menu = new ContextMenu {
                 
-                val menuitem1 = new MenuItem("Action1")
-                val menuitem2 = new MenuItem("Action13")
+                //val menuitem1 = new MenuItem("Action1")
+                //val menuitem2 = new MenuItem("Action13")
                 val newcity = new MenuItem("New city")
+                val soldier = new MenuItem("Recruit soldier")
+                val battleship = new MenuItem("Place Battleship")
+                val doNothing = new MenuItem("Close")
                 
-                menuitem1.onAction = action1
-                menuitem2.onAction = action13
+                //menuitem1.onAction = action1
+                //menuitem2.onAction = action13
                 newcity.onAction = buildcitywrapper
-                
-                items.addAll(menuitem1, menuitem2, newcity)
+                battleship.onAction = createbattleshipwrapper
+                soldier.onAction = soldierwrapper
+                //items.addAll(menuitem1, menuitem2, newcity, battleship, soldier)
+                logichex match {
+                    case Water(inhabitant, q, r, s) => {
+                        if(logichex.unit.isEmpty&&doWeHaveYourCityNear(logichex)){
+                            items.addAll(battleship, doNothing)
+                        }
+                    
+                    }
+                    case _ => {
+                        if(logichex.unit.isEmpty&&doWeHaveYourCityNear(logichex)){
+                            items.addAll(soldier, doNothing)
+                        }
+                        if(logichex.unit.isEmpty&&gotAnyUnitsNear(logichex)){
+                            items.addAll(newcity, doNothing)
+                        }
+                    }
+                }
+                //items.addOne(doNothing)
             }
             
             menu.show(root, x, y)
@@ -194,19 +243,67 @@ val random = scala.util.Random
         text.textProperty().bind(textProperty)
         root.top_=(text)
         
-        def buildcityhuman(logichex:Hex, polyhex:Polygon, cityname:String) = {
-            
+        def buildcityhuman(logichex:Hex, polyhex:Polygon):Unit = {
+            if(logichex.unit.nonEmpty){
+                return
+            }
             
             val circle = new Circle {
                 centerX = polyhex.translateX.toDouble
                 centerY = polyhex.translateY.toDouble
-                radius = 10
+                radius = 15
                 fill = Color.White 
                 stroke = Color.Black 
             }
             root.children += circle
-            val city = City(cityname, you, circle)
+            val city = City( you, circle)
             logichex.unit = Option(city)
+        }
+    
+        def placebattleshiphuman(logichex:Hex, polyhex:Polygon):Unit = {
+            if(logichex.unit.nonEmpty){
+                return
+            }
+            val star:Polygon =  Polygon(
+                10.0, 0.0,
+                30.0, 0.0,
+                40.0, 16.0,
+                0.0, 16.0
+                
+                
+            )
+            
+            star.fill = Color.White 
+            star.stroke = Color.Black 
+            star.translateX_=(polyhex.translateX.toDouble - 20)
+            star.translateY_=(polyhex.translateY.toDouble -8)
+            root.children += star
+            val ship = BattleShip(you, star)
+            logichex.unit = Option(ship)
+        }
+
+        def placesoldierhuman(logichex:Hex, polyhex:Polygon):Unit = {
+            if(logichex.unit.nonEmpty){
+                return
+            }
+            
+            val star:Polygon =  Polygon(
+                0.00, 0.00,
+                20.0, 0.00,
+                00.0, 20.0,
+                20.0, 20.0,
+                
+                
+                
+            )
+            
+            star.fill = Color.White 
+            star.stroke = Color.Black 
+            star.translateX_=(polyhex.translateX.toDouble- 10)
+            star.translateY_=(polyhex.translateY.toDouble- 10)
+            root.children += star
+            val soldier = Soldier(you, star)
+            logichex.unit = Option(soldier)
         }
         
 }

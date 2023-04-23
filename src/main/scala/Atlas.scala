@@ -14,6 +14,7 @@ class Atlas(val landscape:scala.collection.mutable.HashSet[(Polygon, Hex)]){
         landscape.map(a => a._2).filter(a => (abs(a.q-qt)==1&&abs(a.r-rt)==1&&st==a.s)||(abs(a.q-qt)==1&&abs(a.s-st)==1&&rt==a.r)||(abs(a.s-st)==1&&abs(a.r-rt)==1&&qt==a.q))
     }
     
+    
 }
 
 
