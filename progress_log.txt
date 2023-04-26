@@ -14,4 +14,4 @@ Managed to make a neat map using the resource above
 
 22/04/2023
 Much work to do but I got the most important things down and it is just implementations left, for which
-I have more than enough time.
+I have enough time.
